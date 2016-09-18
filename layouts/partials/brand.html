@@ -1,3 +1,7 @@
+{{ with .Site.Params.gravatar }}
+<img class="pure-menu-heading brand" href="/" src = {{ . | safeHTML }} alt="gravatar"></img>
+{{ end }}
+
 {{ with .Site.Params.brand }}
   <a class="pure-menu-heading brand" href="/">{{ . | safeHTML }}</a>
 {{ end }}
