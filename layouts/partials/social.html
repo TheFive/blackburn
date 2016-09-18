@@ -136,6 +136,12 @@
       <a class="pure-menu-link" href="https://serverfault.com/users/{{ . }}" target="_blank"><i class="fa fa-server fa-fw"></i>Server Fault</a>
     </li>
     {{ end }}
+    
+    {{ with .Site.Social.openstreetmap }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://openstreetmap.org/user/{{ . }}" target="_blank"><i class="fa fa-open-street-map fa-fw"></i>OpenStreetMap</a>
+    </li>
+    {{ end }}
 
     <!-- Gaming -->
 
